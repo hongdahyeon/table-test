@@ -5,7 +5,7 @@ import yongtable.tabletest.global.base.BaseEntity;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "user")
+@Table(name = "yong_user")
 public class User extends BaseEntity {
 
     @Id @GeneratedValue
