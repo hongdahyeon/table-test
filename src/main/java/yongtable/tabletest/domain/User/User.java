@@ -9,7 +9,7 @@ import javax.persistence.*;
 public class User extends BaseEntity {
 
     @Id @GeneratedValue
-    @Column(name = "user_id")
+    @Column(name = "yong_user_id")
     private Long id;
 
     @Column(name = "nickname")

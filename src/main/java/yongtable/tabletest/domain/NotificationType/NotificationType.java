@@ -9,7 +9,7 @@ import javax.persistence.*;
 public class NotificationType extends BaseEntity {
 
     @Id @GeneratedValue
-    @Column(name = "notification_type_id")
+    @Column(name = "yong_notification_type_id")
     private Long id;
 
     @Column(name = "name")

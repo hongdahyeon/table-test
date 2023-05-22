@@ -11,7 +11,7 @@ import javax.persistence.*;
 public class Notification extends BaseEntity {
 
     @Id @GeneratedValue
-    @Column(name = "notification_id")
+    @Column(name = "yong_notification_id")
     private Long id;
 
     @ManyToOne
