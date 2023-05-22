@@ -11,3 +11,4 @@ table-test
 * 23-05-22 | commit 8  (알림 & 알림타입 테이블 이름 변경 -> 모든 테이블 앞에 'yong' 붙이기)
 * 23-05-22 | commit 9  (알림 & 알림타입 & 유저 id 컬럼명 변경 -> 모든 테이블의 id컬럼명은 'table이름+_id'로 통일)
 * 23-05-22 | commit 10 (commit9의 id 컬럼명 변경에 따른 -> joincolumn name값 변경)
+* 23-05-22 | commit 11 (db url 변경 -> db 연결 at intellij)
