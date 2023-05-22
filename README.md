@@ -28,3 +28,4 @@ table-test
 * 23-05-22 | commit 25 (MovingDetail -> FurnitureDetail 이름 변경)
 * 23-05-22 | commit 26 (유저 가구 목록 & 상세 테이블 생성)
 * 23-05-22 | commit 27 (패키지명 변경 -> 대문자 사용하지 말것)
+* 23-05-22 | commit 28 (그룹 & 공통 코드 테이블 생성)
