@@ -1,33 +1,20 @@
 package yongtable.tabletest.global.base;
 
-import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.data.annotation.CreatedBy;
+import org.springframework.data.annotation.LastModifiedBy;
 
 import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
-import javax.persistence.PrePersist;
-import javax.persistence.PreUpdate;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 
 @MappedSuperclass
-public class BaseEntity {
+public class BaseEntity extends BaseTimeEntity{
 
-    @CreatedDate
-    @Column(updatable = false)
-    private String createdDate;
+    @CreatedBy
+    @Column(name = "reg_id", updatable = false)
+    private Long regId;
 
-    @LastModifiedDate
-    private String updatedDate;
+    @LastModifiedBy
+    @Column(name = "updt_id")
+    private Long updtId;
 
-    @PrePersist
-    public void onPrePersist(){
-        this.createdDate = LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
-        this.updatedDate = this.createdDate;
-    }
-
-    @PreUpdate
-    public void onPreUpdate(){
-        this.updatedDate = LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
-    }
 }

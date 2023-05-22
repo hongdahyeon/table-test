@@ -1,12 +1,12 @@
 package yongtable.tabletest.domain.User;
 
-import yongtable.tabletest.global.base.BaseEntity;
+import yongtable.tabletest.global.base.BaseTimeEntity;
 
 import javax.persistence.*;
 
 @Entity
 @Table(name = "yong_user")
-public class User extends BaseEntity {
+public class User extends BaseTimeEntity {
 
     @Id @GeneratedValue
     @Column(name = "yong_user_id")

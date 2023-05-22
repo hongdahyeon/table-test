@@ -1,12 +1,12 @@
 package yongtable.tabletest.domain.NotificationType;
 
-import yongtable.tabletest.global.base.BaseEntity;
+import yongtable.tabletest.global.base.BaseTimeEntity;
 
 import javax.persistence.*;
 
 @Entity
 @Table(name = "yong_notification_type")
-public class NotificationType extends BaseEntity {
+public class NotificationType extends BaseTimeEntity {
 
     @Id @GeneratedValue
     @Column(name = "yong_notification_type_id")
