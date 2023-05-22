@@ -1,10 +1,12 @@
 package yongtable.tabletest.domain.MovingCompany;
 
+import yongtable.tabletest.global.base.BaseEntity;
+
 import javax.persistence.*;
 
 @Entity
-@Table(name = "moving_company")
-public class MovingCompany {
+@Table(name = "user")
+public class User extends BaseEntity {
 
     @Id @GeneratedValue
     @Column(name = "moving_company_id")
