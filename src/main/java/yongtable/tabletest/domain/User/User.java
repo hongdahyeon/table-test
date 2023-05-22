@@ -1,4 +1,4 @@
-package yongtable.tabletest.domain.MovingCompany;
+package yongtable.tabletest.domain.User;
 
 import yongtable.tabletest.global.base.BaseEntity;
 

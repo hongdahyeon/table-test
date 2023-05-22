@@ -1,4 +1,4 @@
-package yongtable.tabletest.domain.MovingCompany;
+package yongtable.tabletest.domain.User;
 
 import lombok.Getter;
 import lombok.Setter;
