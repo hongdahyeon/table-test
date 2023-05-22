@@ -13,3 +13,4 @@ table-test
 * 23-05-22 | commit 10 (commit9의 id 컬럼명 변경에 따른 -> joincolumn name값 변경)
 * 23-05-22 | commit 11 (db url 변경 -> db 연결 at intellij)
 * 23-05-22 | commit 12 (유저의 '내 지역' 테이블 생성)
+* 23-05-22 | commit 13 (BaseEntity & BaseTimeEntity로 나누고, 상속받는 클래스명 수정)
