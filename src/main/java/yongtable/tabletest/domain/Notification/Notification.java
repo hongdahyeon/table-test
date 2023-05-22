@@ -15,11 +15,11 @@ public class Notification extends BaseEntity {
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "user_id")
+    @JoinColumn(name = "yong_user_id")
     private User user;
 
     @ManyToOne
-    @JoinColumn(name = "notification_type_id")
+    @JoinColumn(name = "yong_notification_type_id")
     private NotificationType notificationType;
 
     @Column(name = "message")
