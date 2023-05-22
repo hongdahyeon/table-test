@@ -1,6 +1,7 @@
 package yongtable.tabletest.domain.EstimationAnswer;
 
 import yongtable.tabletest.domain.Estimation.Estimation;
+import yongtable.tabletest.domain.MovingExpenses.MovingExpenses;
 import yongtable.tabletest.global.base.BaseEntity;
 
 import javax.persistence.*;
@@ -14,8 +15,8 @@ public class EstimationAnswer extends BaseEntity {
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "yong_estimation_id")
-    private Estimation estimation;
+    @JoinColumn(name = "yong_moving_expenses_id")
+    private MovingExpenses movingExpenses;
 
     @Column(name = "open_at")
     private String openAt;
