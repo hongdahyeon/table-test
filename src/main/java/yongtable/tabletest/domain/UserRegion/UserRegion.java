@@ -21,4 +21,7 @@ public class UserRegion {
 
     @Column(name = "langitude")  // 경도
     private float langitude;
+
+    @Column(name = "region_code")
+    private String regionCode;
 }
