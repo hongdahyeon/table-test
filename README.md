@@ -15,3 +15,4 @@ table-test
 * 23-05-22 | commit 12 (유저의 '내 지역' 테이블 생성)
 * 23-05-22 | commit 13 (BaseEntity & BaseTimeEntity로 나누고, 상속받는 클래스명 수정)
 * 23-05-22 | commit 14 (견적 테이블 생성)
+* 23-05-22 | commit 15 (출발/도착 테이블 생성)
