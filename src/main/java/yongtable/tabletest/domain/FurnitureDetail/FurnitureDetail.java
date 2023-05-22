@@ -1,15 +1,15 @@
-package yongtable.tabletest.domain.MovingDetail;
+package yongtable.tabletest.domain.FurnitureDetail;
 
 import yongtable.tabletest.domain.FurnitureDetailGroup.FurnitureDetailGroup;
 
 import javax.persistence.*;
 
 @Entity
-@Table(name = "yong_moving_detail")
-public class MovingDetail {
+@Table(name = "yong_furniture_detail")
+public class FurnitureDetail {
 
     @Id @GeneratedValue
-    @Column(name = "yong_moving_detail_id")
+    @Column(name = "yong_furniture_detail_id")
     private Long id;
 
     @ManyToOne
