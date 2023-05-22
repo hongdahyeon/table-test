@@ -18,6 +18,6 @@ public class MovingStatus extends BaseEntity {
     private Estimation estimation;
 
     @Enumerated(EnumType.STRING)
-    @Column(name = "moving_status_code")            // 이사 상태 코드
+    @Column(name = "moving_status_code")           // 이사 상태 코드
     private MovingStatusCode movingStatusCode;
 }
