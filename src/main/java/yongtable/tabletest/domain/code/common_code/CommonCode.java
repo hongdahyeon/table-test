@@ -1,5 +1,6 @@
 package yongtable.tabletest.domain.code.common_code;
 
+import org.hibernate.annotations.Comment;
 import yongtable.tabletest.domain.code.group_code.GroupCode;
 import yongtable.tabletest.global.base.BaseTimeEntity;
 

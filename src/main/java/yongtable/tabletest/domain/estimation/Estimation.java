@@ -6,6 +6,13 @@ import yongtable.tabletest.global.base.BaseEntity;
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
+/**
+ * > 1유저는 여러 견적을 작성할 수 있다.
+ * -> 각 견적에는 '상태'가 있다. (moving_status)
+ * -> 각 견적에는 업체로부터 비용 견적을 받는다. (moving_expenses)
+ * -> 각 견적에 대해 업체로부터 받은 비용 견적을 토대로 댓글을 주고 받는다. (estimation_answer)
+ * -> 각 견적에 대해선 '출발/도착' 정보가 담긴다. (departure_arrival)
+ * */
 @Entity
 @Table(name = "yong_estimation")
 public class Estimation extends BaseEntity {

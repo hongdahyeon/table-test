@@ -1,5 +1,6 @@
 package yongtable.tabletest.domain.user;
 
+import yongtable.tabletest.global.base.Address;
 import yongtable.tabletest.global.base.BaseTimeEntity;
 
 import javax.persistence.*;

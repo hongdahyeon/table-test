@@ -14,21 +14,21 @@ import java.time.format.DateTimeFormatter;
 public abstract class BaseTimeEntity {
 
     @CreatedDate
-    @Column(name = "created_date", updatable = false)
-    private String createdDate;
+    @Column(name = "created_at", updatable = false)
+    private String createdAt;
 
     @LastModifiedDate
-    @Column(name = "updated_date")
-    private String updatedDate;
+    @Column(name = "updated_at")
+    private String updatedAt;
 
     @PrePersist
     public void onPrePersist(){
-        this.createdDate = LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
-        this.updatedDate = this.createdDate;
+        this.createdAt = LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+        this.updatedAt = this.createdAt;
     }
 
     @PreUpdate
     public void onPreUpdate(){
-        this.updatedDate = LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+        this.updatedAt = LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
     }
 }

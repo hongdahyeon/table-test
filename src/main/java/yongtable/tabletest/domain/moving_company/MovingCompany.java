@@ -1,5 +1,7 @@
 package yongtable.tabletest.domain.moving_company;
 
+import yongtable.tabletest.global.base.Address;
+
 import javax.persistence.*;
 
 @Entity
@@ -17,7 +19,7 @@ public class MovingCompany {
     private String description;
 
     @Column(name = "person_count")
-    private String personCount;
+    private Integer personCount;
 
     @Column(name = "history")
     private Integer history;
@@ -29,10 +31,10 @@ public class MovingCompany {
     private Long imageGroupId;
 
     @Column(name = "latitude")
-    private float latitude;
+    private double  latitude;
 
     @Column(name = "langitude")
-    private float langitude;
+    private double langitude;
 
     @Column(name = "company_name")
     private String companyName;
@@ -43,6 +45,10 @@ public class MovingCompany {
     @Column(name = "business_number")
     private String businessNumber;
 
+    @Enumerated(EnumType.STRING)
     @Column(name = "business_address")
-    private String businessAddress;
+    private Address businessAddress;
+
+    @Column(name = "contact_time")
+    private String contactTime;
 }
