@@ -12,7 +12,7 @@ public class UserRegion {
     @Column(name = "yong_user_region_id")
     private Long id;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "yong_user_id")
     private User user;
 

@@ -13,7 +13,7 @@ public class Comment extends BaseEntity {
     @Column(name = "yong_comment_id")
     private Long id;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "yong_post_id")
     private Post post;
 

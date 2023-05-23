@@ -14,11 +14,11 @@ public class UserFurnitureList extends BaseTimeEntity {
     @Column(name = "yong_user_furniture_list_id")
     private Long id;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "yong_furniture_id")
     private Furniture furniture;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "yong_estimation_id")
     private Estimation estimation;
 

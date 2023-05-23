@@ -12,7 +12,7 @@ public class FurnitureDetail {
     @Column(name = "yong_furniture_detail_id")
     private Long id;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "yong_furniture_detail_group_id")
     private FurnitureDetailGroup furnitureDetailGroup;
 

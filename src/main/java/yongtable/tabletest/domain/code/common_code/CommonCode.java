@@ -13,7 +13,7 @@ public class CommonCode extends BaseTimeEntity {
     @Column(name = "yong_common_code_id")
     private Long id;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "yong_group_code_id")
     private GroupCode groupCode;
 

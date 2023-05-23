@@ -13,7 +13,7 @@ public class MovingStatus extends BaseEntity {
     @Column(name = "yong_moving_status_id")
     private Long id;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "yong_estimation_id")
     private Estimation estimation;
 

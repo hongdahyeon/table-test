@@ -12,7 +12,7 @@ public class MovingCompanySns {
     @Column(name = "yong_moving_company_sns_id")
     private Long id;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "yong_moving_company_id")
     private MovingCompany movingCompany;
 

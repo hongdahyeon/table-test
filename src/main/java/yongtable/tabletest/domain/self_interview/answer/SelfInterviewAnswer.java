@@ -15,11 +15,11 @@ public class SelfInterviewAnswer extends BaseTimeEntity {
     @Column(name = "yong_self_interview_answer_id")
     private Long id;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "yong_self_interview_question_id")
     private SelfInterviewQuestion selfInterviewQuestion;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "yong_moving_company_id")
     private MovingCompany movingCompany;
 

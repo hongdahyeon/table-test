@@ -13,7 +13,7 @@ public class EstimationAnswer extends BaseEntity {
     @Column(name = "yong_estimation_answer_id")
     private Long id;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "yong_moving_expenses_id")
     private MovingExpenses movingExpenses;
 

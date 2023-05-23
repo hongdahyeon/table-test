@@ -13,7 +13,7 @@ public class MovingCompanyReview extends BaseEntity {
     @Column(name = "yong_moving_company_review_id")
     private Long id;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "yong_moving_company_id")
     private MovingCompany movingCompany;
 

@@ -12,7 +12,7 @@ public class DepartureArrival {
     @Column(name = "yong_departure_arrival_id")
     private Long id;
     
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "yong_estimation_id")
     private Estimation estimation;
     

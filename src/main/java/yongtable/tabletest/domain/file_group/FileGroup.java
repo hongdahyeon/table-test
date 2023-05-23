@@ -20,10 +20,10 @@ public class FileGroup extends BaseTimeEntity {
     @Column(name = "description")
     private String description;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "parent_id")
     private FileGroup parent;
 
-    @OneToMany(mappedBy = "parent")
+    @OneToMany(mappedBy = "parent", fetch = FetchType.LAZY)
     private List<FileGroup> child = new ArrayList<>();
 }

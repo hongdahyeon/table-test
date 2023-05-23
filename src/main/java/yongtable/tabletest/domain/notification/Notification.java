@@ -14,11 +14,11 @@ public class Notification extends BaseTimeEntity {
     @Column(name = "yong_notification_id")
     private Long id;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "yong_user_id")
     private User user;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "yong_notification_type_id")
     private NotificationType notificationType;
 

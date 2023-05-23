@@ -13,11 +13,11 @@ public class UserFurnitureListDetail {
     @Column(name = "yong_user_furnigure_list_detail_id")
     private Long id;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "yong_user_furniture_list_id")
     private UserFurnitureList userFurnitureList;
 
-    @OneToOne
+    @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "yong_furniture_detail_id")
     private FurnitureDetail furnitureDetail;
 

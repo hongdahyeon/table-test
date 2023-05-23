@@ -14,11 +14,11 @@ public class Post extends BaseEntity {
     @Column(name = "yong_post_id")
     private Long id;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "yong_post_category_id")
     private PostCategory postCategory;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "yong_file_group_id")
     private FileGroup fileGroup;
 
