@@ -36,3 +36,4 @@ table-test
 * 23-05-22 | commit 33 (찜 목록 테이블 생성 -> 유저, 이사업체와 매핑)
 * 23-05-22 | commit 34 (셀프 인터뷰 테이블 생성)
 * 23-05-23 | commit 35 (조인 -> FetchType : LAZY(지연로딩))
+* 23-05-23 | commit 36 (주석 설명, BaseTimeEntity 컬럼명 변경)
